@@ -1,0 +1,51 @@
+/* 
+* HEADER
+*/
+header {
+    height: 70px;
+    /*👆1st here ht*/
+    border-bottom: 1px solid #272727;
+}
+
+.header-container {
+    max-width: 1400px;
+    height: 100%;
+    /*👆2nd here ht*/
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /*then do align item center*/
+}
+
+.header-left {}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-brand img {
+    width: 60px;
+}
+
+.header-brand h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.header-right {}
+
+.header-login {
+    display: flex;
+    gap: 20px;
+}
+
+/* means this property will apply only till 700px */
+@media only screen and (max-width:700px) {
+    .header-brand h2 {
+        display: none;
+    }
+}
