@@ -1,4 +1,21 @@
 /* 
+* COMPONENTS
+*/
+.input-field {
+    font-size: 16px;
+    padding: 4px;
+    width: 100%;
+    display: block;
+    margin-bottom: 14px;
+    background-color: transparent;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+/* 
 * HEADER
 */
 header {
@@ -43,6 +60,10 @@ header {
     gap: 20px;
 }
 
+.header-login a:hover {
+    border-bottom: 1px solid white;
+}
+
 /* means this property will apply only till 700px */
 @media only screen and (max-width:700px) {
     .header-brand h2 {
@@ -73,3 +94,44 @@ footer p {
         display: none;
     }
 } */
+
+/* 
+USER REGISTRATION PAGE
+*/
+.register {
+    /* 70 px height of header */
+    height: calc(100vh - 70px);
+}
+
+.register-container {
+    max-width: 650px;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    padding: 10px;
+}
+
+.register-form {
+    width: 500px;
+    /* width: 90%; */
+    margin: auto;
+    padding: 20px 10px;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+    border-radius: 12px;
+}
+
+.register-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-form button {
+    width: 100%;
+    font-size: 16px;
+    padding: 6px;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-weight: 500;
+    background-color: var(--primary-color);
+}
