@@ -9,3 +9,12 @@ body {
     background-color: #000000;
     color: #ffffff;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-login a:hover {
+    border-bottom: 1px solid white;
+}
